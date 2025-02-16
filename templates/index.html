@@ -1,1 +1,66 @@
-<h1>Welcome to the home page</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Student Exam Performance Indicator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: radial-gradient(circle, #0d1117, #04050a);
+            color: #c9d1d9;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 600px;
+            margin-top: 100px;
+            padding: 30px;
+            background: rgba(22, 27, 34, 0.9);
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0, 140, 255, 0.5);
+            transition: transform 0.3s ease-in-out;
+        }
+        .container:hover {
+            transform: scale(1.02);
+        }
+        h1 {
+            color: #58a6ff;
+            font-size: 2.5rem;
+        }
+        p {
+            font-size: 1.2rem;
+            color: #8b949e;
+        }
+        .btn-primary {
+            width: 100%;
+            background: linear-gradient(90deg, #0d6efd, #1f6feb);
+            border: none;
+            transition: 0.3s;
+        }
+        .btn-primary:hover {
+            background: linear-gradient(90deg, #1f6feb, #0d6efd);
+            box-shadow: 0 0 10px rgba(0, 140, 255, 0.5);
+        }
+        .nav-btn {
+            margin-top: 20px;
+            background: linear-gradient(90deg, #23272f, #161b22);
+            border: none;
+            color: #58a6ff;
+            transition: 0.3s;
+        }
+        .nav-btn:hover {
+            background: linear-gradient(90deg, #161b22, #23272f);
+            box-shadow: 0 0 10px rgba(0, 140, 255, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Student Exam Performance Indicator</h1>
+        <p>Predict your exam performance with ease.</p>
+        <a href="{{ url_for('predict_datapoint') }}" class="btn btn-primary">Go to Prediction Page</a>
+    </div>
+</body>
+</html>
